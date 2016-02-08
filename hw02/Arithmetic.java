@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////////////
 //Rachel McCoog
 //Cyclometer Java Program 
-// Feb. 7, 2016
+// Feb. 8, 2016
 // CSE 02 
 // The purpose of this program is to compute the cost of items bought
 // plus sales tax.
@@ -79,6 +79,7 @@ public class Arithmetic {
         finalTotalSalesTax = CleanTwoDecTotalSalesTax/100;
         finalTotalCostWithTax = CleanTwoDecTotalCostWithTax/100;
         
+        //printing the results
         System.out.println("A pair of pants costs $" +pantsPrice+ " and three pairs are taxed $" +finalSalesTaxChargedOnPants+".");
         System.out.println("A shirt costs $" +shirtPrice+ " and two shirts are taxed $" +finalSalesTaxChargedOnShirts+".");
         System.out.println("A belt costs $" +beltPrice+ " and a belt is taxed $" +finalSalesTaxChargedOnBelts+".");
