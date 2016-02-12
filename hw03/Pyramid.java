@@ -14,19 +14,18 @@ public class Pyramid {
     Scanner input = new Scanner(System.in);
     
     //Prompt the user to enter the square side of the pyramid
-   	System.out.println("Enter the length of the square side of the pyramid(25)");
+   	System.out.print("Enter the length of the square side of the pyramid: ");
    	double squareside = input.nextDouble();
    	
    
    //Prompt the use to enter the height of the pyramid 	
-   	Scanner input2 = new Scanner(System.in);
-   	System.out.println("Enter the height of the pyramid (15)");
+   	System.out.print("Enter the height of the pyramid: ");
    	double height = input.nextDouble();
    	
    	//Find the volume inside the pyramid
-   	double volumePyramid = (squareside*squareside*height)/3;
+   	double volumePyramid = (squareside * squareside * height) / 3;
    	
-   	System.out.println("The volume inside the pyramid is" +volumePyramid+".");
+   	System.out.println("The volume inside the pyramid is " +volumePyramid+".");
    	    
    	    
 
