@@ -14,7 +14,7 @@ public class Convert {
     Scanner input = new Scanner(System.in);
     
     //Prompt the user to enter the distance
-   	System.out.println("Enter the distance in meters: 34.23");
+   	System.out.print("Enter the distance in meters:");
    	double meters1 = input.nextDouble();
    	
    	//Convert to inches
@@ -23,10 +23,8 @@ public class Convert {
    	//print the conversion
    	System.out.println("The distance " +meters1+ " meters is " +inches1+ " inches.");
    	
-   	//Create a Scanner object
-   	
-   	Scanner input2 = new Scanner(System.in);
-   	System.out.println("Enter the distance in meters: 15.25");
+   	//Prompt the user to enter the disnce
+   	System.out.print("Enter the distance in meters:");
    	double meters2 = input.nextDouble();
    	
    	//Convert to inches 
