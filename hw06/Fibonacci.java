@@ -28,7 +28,7 @@ public class Fibonacci{
       
       int a = 0;
       boolean goodInput = false;
-      
+      //make sure first value entered fits parameters
       System.out.print("Enter the first number in the sequence: ");
  
       while (!goodInput) {
@@ -50,7 +50,7 @@ public class Fibonacci{
       
       int b = 0;
       boolean goodInput2 = false;
-      
+      //make sure second value entered fits parameters
       System.out.print("Enter the second number in the sequence: ");
      
       while (!goodInput2) {
@@ -72,7 +72,7 @@ public class Fibonacci{
       
       int c = 0;
       boolean goodInput3 = false;
-      
+      //make sure third value entered fits parameters
       System.out.print("How many custom Fibonacci numbers should be printed: ");
      
       while (!goodInput3) {
@@ -91,16 +91,22 @@ public class Fibonacci{
               input.next();
           }
         }
-      
+      int count = customCount - 2;
       int counter = 0;
-      
-      while(counter < customCount) {
-        System.out.print(+secondLastNumber+","+lastNumber+"");
+      int lastCount = count -1;
+        System.out.print(+secondLastNumber+","+lastNumber+",");
+     //find fibonacci number
+      while(counter < count) {
+        lastNumber = secondLastNumber + lastNumber;
+        if (count == count){
+        System.out.print(+lastNumber+",");
+        }
+        else if (count == lastCount){
+          System.out.println(+lastNumber+".");
+        }
         
-        newLastNumber = secondLastNumber + lastNumber;
-        
+       
         counter++;
-        
         }
         
     

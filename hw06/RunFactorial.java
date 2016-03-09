@@ -13,25 +13,44 @@ public class RunFactorial{
 //  add main method
     public static void main(String[] args) {
     
-    //create a scanner item
-    Scanner input = new Scanner(System.in);
-    //prompt user to enter an integer 
-    System.out.print("Please enter an integer that is between 9 and 16: ");
-    int value1;
-    
-      // check to make sure the entered value is an integer
-      while ( ! Scanner.hasNextInt()) {
-      System.out.print("Invalid input, enter again!: ");
-        Scanner.next(); //clears bad input
-      }
+     //create scanner item
+   	  Scanner input = new Scanner( System.in );
+     
+      int number = 0; //initialize number
       
-      //check to make sure entered value is between 9 and 16
-      while (value1 > 16 || value1 < 9) {
-      System.out.println("Value must be between 9 and 16: ");
-       value1 = Scanner.nextInt();
-      }
+   
       
+      int a = 0;
+      boolean goodInput = false;
       
+      //make sure value entered is an integer between 9 and 16
+      System.out.println("Enter an integer between 9 and 16: ");
+      while (!goodInput) {
+          if (input.hasNextInt()){
+            a = input.nextInt();
+            if(a>9 && a<16){
+              number = a;
+              goodInput = true;
+            }
+            else{
+              System.out.println("Please enter an integer between 9 and 16: ");
+            }
+          }
+          else {
+              System.out.println("Please enter integer: ");
+              input.next();
+          }
+        }
+        
+        //calculate factorial 
+        int factorial = 1;
+        int counter = 1;
+        
+        while (counter <= number ){
+          factorial *= counter;
+          counter++;
+        }
+      System.out.println(+number+"! = "+factorial);
         
     }
 }
