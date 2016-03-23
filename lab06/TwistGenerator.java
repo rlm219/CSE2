@@ -41,7 +41,7 @@ public class TwistGenerator{
               input.next();
           }
         }
-      //create a twist   
+      //create a twist  
       int counter = 0;  
       int twist = length/3;
       int leftOver = length%3;

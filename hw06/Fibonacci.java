@@ -97,17 +97,15 @@ public class Fibonacci{
         System.out.print(+secondLastNumber+","+lastNumber+",");
      //find fibonacci number
       while(counter < count) {
-        lastNumber = secondLastNumber + lastNumber;
         if (count == count){
+        lastNumber = secondLastNumber + lastNumber;
         System.out.print(+lastNumber+",");
+          
         }
-        else if (count == lastCount){
-          System.out.println(+lastNumber+".");
-        }
-        
+        System.out.println(".");
        
         counter++;
-        }
+        
         
     
        
