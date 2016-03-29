@@ -83,7 +83,8 @@ public class Twisty{
       int leftOver = length%width;
       int rowCounter = 0;
       
-      //create first half of twist
+      while(twist>=0){
+        //create first half of twist
       while(rowCounter<width/2){
         int rowSpace = 0;
         while(rowSpace < rowCounter){
@@ -162,6 +163,9 @@ public class Twisty{
         System.out.println("\\");
         rowCounter--;
       }
+      twist--;
+      }
+      
     
     }
 }

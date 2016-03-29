@@ -13,23 +13,11 @@ public class Bowtie{
 //  add main method
     public static void main(String[] args) {
         
-        int nLine = 9;
-        int nSpace = 0;
+        int nStars = 9;
         int counter = 0;
-        int counter1 = 0;
-        int counter2 = 0;
 
-        for (int nStar = nLine; counter < nLine; nLine--){
-            while (counter1 < nSpace){
-                System.out.println(" ");
-                nSpace ++;
-            }
-            while (counter2 < nStar){
+        for (int nStar = 9; counter < nStar; counter++){
                 System.out.print("*");
-                counter2++;
-            }
-            nStar = nStar - 2;
-
         }
     }
 }
