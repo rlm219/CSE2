@@ -6,37 +6,31 @@
 //      javac HelloWorld.java
 //  run the program
 //      java HelloWorld//
-
+import java.util.*;
 //  define a class
 public class HelloWorld{
     
 //  add main method
-    public static void main(String[] args) {
-       
-int val = 1;
-    switch (val){
-        case (1):
-            System.out.printf("case 1 ");
-        break;    
-           
-        case (2):
-            System.out.printf("case 2 ");
-        break;    
-           
-        case (1):
-            System.out.printf("case 3 ");
-        break;
-        
-        default:
-            System.out.printf("default ");
-           
-       
-    }
+
+public static int B(int y){
+    y += 3;
+	return y;
+}
+
+public static int A(int x){
+	x -= 2 * B(x);
+	return x;
+}
+
+public static void main( String args[] ){
+	int i = 1;
+	for( i = 0; i < 4; i++ ){
+		System.out.println( "val: " + A(i) ); 
+	}
+}
 
 
     
-    //test/testtest
-    }
-    
-    }
+
+}
 

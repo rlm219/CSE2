@@ -12,12 +12,14 @@ public class Bowtie{
     
 //  add main method
     public static void main(String[] args) {
-        
-        int nStars = 9;
+        //initalize counter
         int counter = 0;
-
+        //for loop to print 9 stars
         for (int nStar = 9; counter < nStar; counter++){
                 System.out.print("*");
+                for (int nStar = nStar - 2; counter <){
+                    
+                }
         }
     }
 }
