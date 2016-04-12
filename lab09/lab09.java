@@ -191,7 +191,13 @@ public class lab09{
         String userAnswer = input.next();
         while(userAnswer.equals("Yes")){
            //print the statement
-            System.out.println("The "+ adj +" "+ sub + " " + verb + " the " + ob + ".");  
+            adj = adjectives();
+            sub = subjectNoun();
+            verb = pastVerb();
+            ob = objectNoun();
+            System.out.println("The "+ adj +" "+ sub + " " + verb + " the " + ob + ".");
+            System.out.println("Would you like another sentence (Yes or No)");
+            userAnswer = input.next();
         }
     }
 }
