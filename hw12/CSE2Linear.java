@@ -24,7 +24,7 @@ public class CSE2Linear{
         grades = new int[15];
         Scanner input = new Scanner(System.in);
         int[] a;
-        a = new int[15];
+        a = new int[16];
         boolean goodInput = false;
         System.out.println("Enter the final grades for CSE2");
         while(!goodInput){
@@ -42,7 +42,6 @@ public class CSE2Linear{
                         }
                         else{
                             System.out.println("Please enter an integer greater than the last");
-                            input.next();
                         }
                     }
                     else{
@@ -57,14 +56,14 @@ public class CSE2Linear{
             }
         }
         //print grades
-        for(int j = 0; j<15; j++){
+        for(int j = 1; j<16; j++){
             System.out.print(grades[j]+" ");
         }
         
         Arrays.sort(grades);
         System.out.println("");
         //print sorted
-        for(int j=0; j<15; j++){
+        for(int j=1; j<16; j++){
             System.out.print(grades[j]+" ");
         }
         System.out.println("");

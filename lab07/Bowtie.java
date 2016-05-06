@@ -34,7 +34,9 @@ public class Bowtie{
               System.out.println("Please enter integer: ");
               input.next();
           }
-        } 
+        }
+        
+        
        while(lineCounter<nStar){     
             if(lineCounter > nStar/2){
                 break;

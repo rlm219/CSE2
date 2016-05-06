@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
 //Rachel McCoog
-//HW 11 
+//Lab 11 
 /*the program creates two integer arrays of size 50, array 1 is
 filled with random numbers, the program will find the max and min
 values of the array and print them; then add increasing random numbers
@@ -43,6 +43,7 @@ public class lab11{
         int a = 0;
         boolean goodInput = false;
         System.out.print("Enter an int: ");
+        int found = 0;
         while(!goodInput){
             if(input.hasNextInt()){
                 a = input.nextInt();
@@ -58,8 +59,16 @@ public class lab11{
                 System.out.println("Please enter an integer: ");
                 input.next();
             }
-        int found = 0;
-        found = binarySearch(array2);
+        found = binarySearch(array2, userAnswer);
+        }
+        
+        if(found == -1){
+            System.out.println(userAnswer+" was not found in the list.");
+        }
+        else{
+            System.out.println(userAnswer+"was found.");
+            System.out.println("The user number above the key was"+(found-1));
+            System.out.println("The user number below the key was"+(found+1));
         }
     }
     
@@ -71,7 +80,7 @@ public class lab11{
             if (userAnswer < array2[mid])
                 high = mid - 1;
             else if (userAnswer == array2[mid])
-                return userAnswer;
+                return mid;
             else
                 low = mid + 1;
         }
